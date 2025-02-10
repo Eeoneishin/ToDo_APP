@@ -1,5 +1,12 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import React, { Dispatch, SetStateAction, useRef, useState } from 'react';
+import React, {
+  Dispatch,
+  SetStateAction,
+  useRef,
+  useState,
+  FormEvent,
+  FocusEvent,
+} from 'react';
 import { Todo } from '../../types/Todo';
 import cn from 'classnames';
 
@@ -37,7 +44,10 @@ export const TodoItem: React.FC<Props> = props => {
   };
 
   // eslint-disable-next-line max-len, prettier/prettier
-  const handleClickBlur = async (event: React.FormEvent<HTMLFormElement> | React.FocusEvent<HTMLFormElement, Element>) => {
+  const handleClickBlur = async (
+    // eslint-disable-next-line max-len
+    event: FormEvent<HTMLFormElement> | FocusEvent<HTMLFormElement, Element>,
+  ) => {
     event.preventDefault();
 
     const normalizedTitle = updateTodoTitle.trim();
