@@ -6,6 +6,7 @@
   color: #4d4d4d;
   margin: 40px 20px;
 
+
   &__content {
     margin-bottom: 20px;
     background: #fff;
@@ -17,10 +18,12 @@
     font-size: 100px;
     font-weight: 100;
     text-align: center;
-    color: rgba(175, 47, 47, 0.15);
+    color: white;
     -webkit-text-rendering: optimizeLegibility;
     -moz-text-rendering: optimizeLegibility;
     text-rendering: optimizeLegibility;
+    
+
   }
 
   &__header {
@@ -92,6 +95,8 @@
     padding: 10px 15px;
 
     font-size: 14px;
+
+    transition: transform 0.3s ease-in-out;
 
     color: #777;
     text-align: center;

@@ -1,3 +1,7 @@
+html {
+  background-color: white;
+}
+
 iframe {
   display: none;
 }
@@ -6,6 +10,8 @@ body {
   min-width: 230px;
   max-width: 550px;
   margin: 0 auto;
+  background-color: #e6e6e6;
+  border-radius: 15px;
 }
 
 .notification {

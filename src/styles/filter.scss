@@ -11,12 +11,16 @@
     border: 1px solid transparent;
     border-radius: 3px;
 
+    transition: transform 0.3s ease-in-out;
+
+
     &:hover {
       border-color: rgba(175, 47, 47, 0.1);
     }
 
     &.selected {
       border-color: rgba(175, 47, 47, 0.2);
+      transform: scale(1.05);
     }
   }
 }
